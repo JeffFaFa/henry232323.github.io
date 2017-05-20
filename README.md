@@ -1,21 +1,24 @@
-```
-<style>
-body { 
-background-color: blue;
-}
-</style>
-```
-A RPG bot, with a working inventory, market and economy, team setups and characters aswell. Each user has a server unique inventory and balance. Players may list items on a market for other users to buy. Users may create characters with teams from Pokemon in their storage box. Server administrators may add and give items to the server and its users.
-Pokemon boxes and server configurations. 
+<div id="header">
+  <a class="button is-success" href="https://github.com/henry232323/RPGBot/blob/master/README.md">Full Command List</a>
+  <a class="button">
+      <span class="icon">
+        <i class="fa fa-github"></i>
+      </span>
+      <span>GitHub</span>
+    </a>
+</div>
 
-Made by Henry#6174
+# What is RPGBot?
+
+A Bot for assisting with RPG made by __Henry#6174__, with a working inventory, market and economy, team setups and characters aswell. Each user has a server unique inventory and balance. Players may list items on a market for other users to buy. Users may create characters with teams from Pokemon in their storage box. Server administrators may add and give items to the server and its users.
 
 [**Add to your server**](https://discordapp.com/oauth2/authorize?client_id=305177429612298242&scope=bot&permissions=322625)
 
 [**Support Server**](https://discord.gg/UYJb8fQ)
 
-## Help
-#### Characters:
+<div id="help">
+# Help
+## Characters:
   - *allchars*   List all guild characters
   - *character*  Get info on a character - `rp![character|c|char] <name>`
     - *create*      Create a new character `rp!character [create|new] <name>`
@@ -33,7 +36,7 @@ Made by Henry#6174
         
     - *delete*      Delete a character of the given name (you must be the owner) `rp!character [delete|remove] <name>`
   - *characters* List all your characters `rp![characters|chars]`
-#### Economy:
+## Economy:
   - *bid*        Place a bid on the current bidding item in the channel
   - *economy*    Check your or another users balance `rp![economy|bal|balance|eco|e] [member]
 `
@@ -73,7 +76,7 @@ a random choice from [banana, banana, orange, orange, orange]
     - *removeitem*    Remove a listed item. Requires Bot Mod or Bot Admin `rp!shop removeitem <name>`
     - *sell*          Sell an item to the shop `rp!shop sell <item> <amount>`
   - *startbid*   Start a bid for an item `rp!startbid <item> <amount> <startbid>`
-#### Groups:
+## Groups:
   - *guild*      Get info on a member's guild. Subcommands for guild management
     - *create*         Create a new guild `rp!guild create <name>`
     
@@ -106,12 +109,12 @@ a random choice from [banana, banana, orange, orange, orange]
     - *withdraw*       Take money from the guild bank `rp!guild withdraw <amount>`
     - *withdrawitems*  Withdraw items from the guild (guild mods only, same syntax as deposit items) `rp!guild withdrawitems [items...]`
   - *guilds*     List guilds
-#### Inventory:
+## Inventory:
   - *inventory*  Check your or another users inventory. `rp![inventory|i|inv] [member]`
     - *give*           Give items ({item}x{#}) to a member; ie: ;give @Henry#6174 pokeballx3 `rp!inventory give <other> [items...]`
     - *giveitem*       Give an item to a person (Not out of your inventory, must be Bot Moderator) `rp!inventory giveitem <item> <num> [members...]`
     - *takeitem*       Remove an item from a person's inventory (Must be Bot Moderator) `rp!inventory [takeitem|take] <item> <num> [members...]`
-#### Misc:
+## Misc:
   - *donate*     Donation information
   - *feedback*   Give me some feedback on the bot `rp!feedback <feedback>`
   - *info*       Bot Info
@@ -135,7 +138,7 @@ Optional Additions:
                    periods, e.g. tag.create for the create subcommand of the tag command.
 `rp!source [command]`
   - *totalcmds*  Get totals of commands and their number of uses
-#### Pokemon:
+## Pokemon:
   - *box*        Check the pokemon in your box `rp!box [member]`
   - *pokemon*    Subcommands for Pokemon management, see rp!help pokemon. Same use as rp!box `rp![pokemon|p] [member]`
     - *create*         Create a new Pokemon to add to your box `rp!pokemon [create|new]`
@@ -158,7 +161,7 @@ Optional Additions:
 `your_id` is the ID of the Pokemon you want to give, `their_id` is the Pokemon you want from them.
 `other` being the user you want to trade with `rp!pokemon trade <your_id> <their_id> <other>`
     - *release*        Release a Pokemon from your box `rp!pokemon [release|delete|rm|remove] <id>`
-#### Settings:
+## Settings:
   - *settings*   Get the current server settings `rp![settings|s|configuration|conf]`
     - *additem*        Add a custom item `rp!settings additem <name>`
     
@@ -173,14 +176,20 @@ Optional Additions:
               
     - *iteminfo*       Get info on a server item `rp!settings iteminfo <item>`
     - *items*          See all items for a guild
-#### Team:
+## Team:
   - *team*       Check a character's team `rp!team <character>`
     - *add*            Add a Pokemon to a character's team `rp!team [add|addmember] <character> <id>`
     - *remove*         Remove a Pokemon from a character's team `rp!team [remove|removemember] <character> <id>`
-#### User:
+## User:
   - *userinfo*   Get info on a user `rp![userinfo|ui] [user]`
   - *experience* Get your or another user's level information. Help on this command for experience subcommands
 EXP is calculated using a 0.1x^2+5x+4 where x is equal to the user's current level
 Spamming commands or messages will not earn more exp! `rp![experience|exp] [member]`
     - *add*         Give the given members an amount of experience `rp!experience add <amount> [members...]`
     - *setlevel*    Set the given members level `rp!experience setlevel <level> [members...]`
+</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/jgthms/bulma/master/css/bulma.css">
+<style>
+</style>
