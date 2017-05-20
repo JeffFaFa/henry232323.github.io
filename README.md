@@ -1,8 +1,10 @@
+```
 <style>
 body { 
 background-color: blue;
 }
 </style>
+```
 A RPG bot, with a working inventory, market and economy, team setups and characters aswell. Each user has a server unique inventory and balance. Players may list items on a market for other users to buy. Users may create characters with teams from Pokemon in their storage box. Server administrators may add and give items to the server and its users.
 Pokemon boxes and server configurations. 
 
