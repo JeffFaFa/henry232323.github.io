@@ -1,54 +1,114 @@
+<html>
+  <head>
+    <title>RPGBot Documentation</title>
 
-<body>
-  <div class="nav-right nav-menu">
-    <a class="nav-item is-active" href="/typheus.html">
-        <span class="button is-light">
-          Typheus
-        </span>
-    </a>
-    <span class="nav-item">
-      <a class="button is-light" href="https://ko-fi.com/henrys">
-            <span class="icon">
-                <img src="https://ko-fi.com/favicon.ico">
-            </span>
-        <span>Buy Me a Coffee</span>
-      </a>
-    </span>
-    <span class="nav-item">
-        <a class="button is-light" href="https://discord.gg/UYJb8fQ">
-            <span class="icon">
-                <img src="https://maxcdn.icons8.com/Share/icon/Logos//discord_logo1600.png">
-            </span>
-            <span>Support Server</span>
-        </a>
-    </span>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bulma.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 
-    <span class="nav-item">
-        <a class="button is-light" href="https://discordapp.com/oauth2/authorize?client_id=305177429612298242&amp;scope=bot&amp;permissions=322625">
-            <span class="icon">
-                <img src="https://maxcdn.icons8.com/Share/icon/Logos//discord_logo1600.png">
-            </span>
-            <span>Add the Bot</span>
-        </a>
-    </span>
+    <style>
+      body {
+       font-size: 20px;
+       color: #000;
+       background-color: #D6F0ED;
+      }
+      .nav-menu {
+       background-color: #319D7E;
+       padding: 20px, 20px, 20px, 20px;
+      }
+      #help {
+        margin: auto;
+        padding: 40px 0px 40px 0px;
+        width: 75vw;
+      }
+      #info {
+        background-color: #72E3AF;
+      }
+      #innerinfo {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        text-align: justify;
+        margin: auto;
+        width: 50vw;
+      }
+      #whatisrpgbot {
+        text-align: center;
+        padding: 40px 40px 0px 40px;
+      }
+      code, pre {
+          font-family: monospace;
+          color: #359379;
+          background-color: #72E3AF;
+          border-radius: 3px;
+      }
+      h2 {
+       font-size: 30px;
+       padding: 20px, 0px, 20px, 0px;
+      }
+      ul {
+         padding-left: 30px;
+         list-style-type: circle;
+      }
+      li ul {
+          list-style-type: square;
+      }
 
-    <span class="nav-item">
-      <a class="button" href="https://github.com/henry232323/RPGBot">
-          <span class="icon">
-            <i class="fa fa-github"></i>
+    </style>
+
+  </head>
+  <body>
+    <div class="nav-right nav-menu">
+      <a class="nav-item is-outlined" href="/">
+          <span class="button is-light">
+            Typheus
           </span>
-          <span>GitHub</span>
+      </a>
+      <span class="nav-item">
+        <a class="button is-success is-inverted" href="https://ko-fi.com/henrys">
+              <span class="icon">
+                  <img src="https://ko-fi.com/favicon.ico">
+              </span>
+          <span>Buy Me a Coffee</span>
         </a>
-    </span>
-  </div>
+      </span>
+      <span class="nav-item">
+          <a class="button is-success is-inverted" href="https://discord.gg/UYJb8fQ">
+              <span class="icon">
+                  <img src="http://orig09.deviantart.net/2133/f/2016/200/f/a/discord_token_icon_dark_by_flexo013-daaj71i.png">
+              </span>
+              <span>Support Server</span>
+          </a>
+      </span>
 
-  <h1 id="whatisrpgbot">Qu'est-ce que c'est RPGBot?</h1>
+      <span class="nav-item">
+          <a class="button is-success is-inverted" href="https://discordapp.com/oauth2/authorize?client_id=305177429612298242&amp;scope=bot&amp;permissions=322625">
+              <span class="icon">
+                  <img src="http://orig09.deviantart.net/2133/f/2016/200/f/a/discord_token_icon_dark_by_flexo013-daaj71i.png">
+              </span>
+              <span>Add the Bot</span>
+          </a>
+      </span>
 
-  <p>Un Bot pour aider avec JDR fait par <strong>Henry#6174</strong>, avec inventaire, marché et economie, équipes et caractère aussi. Chaque utilisateur a un serveur unique inventaire et solde bancaire. Joueurs peuvent vendre choses sun le marché pour les autres utilisateurs à acheter. Utilisateurs peuvent créer caractère avec équipe de Pokemon dans ses boîte de rangement. Serveur administrateurs peuvent ajouter et donner choses a le serveur et ses utilisateurs.</p>
+      <span class="nav-item">
+        <a class="button" href="https://github.com/henry232323/RPGBot">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+            <span>GitHub</span>
+          </a>
+      </span>
+    </div>
 
-  <p><a href=""><strong>Serveur d'Assistance</strong></a></p>
+    <div id="info">
+    <h1 id="whatisrpgbot">What is RPGBot?</h1>
+    <div id="innerinfo">
+      <p>A Bot for assisting with RPG made by <strong>Henry#6174</strong>, with a working inventory, market and economy, team setups and characters aswell. Each user has a server unique inventory and balance. Players may list items on a market for other users to buy. Users may create characters with teams from Pokemon in their storage box. Server administrators may add and give items to the server and its users.</p>
+    </div>
+    </div>
 
-<div id="help">
+  <div id="help">
   <h4><a id="Characters_1"></a>Caractère:</h4>
 <ul>
 <li>
@@ -335,19 +395,9 @@ Spamming commands or messages will not earn more exp! <code>rp![experience|exp] 
 </li>
 </ul>
 </div>
-</body>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/bulma.css">
 
-<style>
-  body {
-   font-family: Arial;
-   font-size: 20px;
-  }
-  #header {
-   background-color: #FFE585;
-   text-align: right;
+  <a href="">English</a>
+  </body>
+</html>
 
-  }
-</style>
