@@ -122,78 +122,78 @@
 <p>Exemple de Personnage:</p>
 <pre><code>Henry: rp!character create Jacques
 RPGBot: Décrivez le personnage. (Feuille de personnage pertinente) [Describe the character (Relevant character sheet)]
-Henry: Je travaille a Team Rocket nous voulons voler Pikachu
+Henry: Je travaille pour Team Rocket nous voulons voler Pikachu
 RPGBot: Quel est le niveau? [What level is the character?]
 Henry: 52
-RPGBot: Autre information? Ajoutez un image du personnage utilisant le mot-clé "image". Formats utilisent syntaxe regulier par exemple image: http://image.com/image.png, coleur_de_cheveux: brune, surnom: Pierre (Separez clés avec virgule ou nouvelle ligne.)
+RPGBot: Autres informations? Ajoutez un image du personnage utilisant le mot-clé "image". Les formats utilisent une syntaxe regulière par exemple image: http://image.com/image.png, couleur_de_cheveux: brune, surnom: Pierre (Separez les clés avec une virgule ou nouvelle ligne.)
     [Any additional info? (Add a character image using the image keyword. Formats use regular syntax i.e image: http://image.com/, hair_color: blond, nickname: Kevin (Separate keys with commas or newlines)]
 Henry: coleur_cheveux: violet, richesse: je suis riche, coleur_des_yeux: bleus
-RPGBot: personnage créé! rp!team addmember pour ajouter au équipe de votre personnage [Character created! rp!team addmember to add to your characters team!]
+RPGBot: personnage créé! rp!team addmember pour ajouter a l'équipe de votre personnage [Character created! rp!team addmember to add to your characters team!]
 </code></pre>
 <ul>
 <li><em>delete</em>      Supprimer un personnage du nom donné (Vous devez être le propriétaire) <code>rp!character [delete|remove] &lt;nom&gt;</code></li>
 </ul>
 </li>
 <li>
-<p><em>characters</em> Lister tous vos personnage <code>rp![characters|chars]</code></p>
+<p><em>characters</em> Lister tous vos personnages <code>rp![characters|chars]</code></p>
 </li>
 </ul>
 <h4><a id="Economy_19"></a>Economie:</h4>
 <ul>
-<li><em>bid</em>        Placer une offre sur la chose actuelle dans le channel.</li>
-<li><em>economy</em>    Voir le solde bancaire de quelqu'un<code>rp![economy|bal|balance|eco|e] [membre]</code>
+<li><em>bid</em>        Placer une offre sur l'enchère actuelle dans le channel.</li>
+<li><em>economy</em>    Voir le solde bancaire de quelqu'un <code>rp![economy|bal|balance|eco|e] [membre]</code>
 <ul>
-<li><em>givemoney</em>   Donner les membres argent (Modérateurs) <code>rp!economy [givemoney|give] &lt;montant&gt; [membres...]</code></li>
-<li><em>setbalance</em>  Fixer le solde bancaire des membres à un montant<code>rp!economy [setbalance|set] &lt;montant&gt; [membres...]</code></li>
+<li><em>givemoney</em>   Donner l'argent aux membres (Modérateurs) <code>rp!economy [givemoney|give] &lt;montant&gt; [membres...]</code></li>
+<li><em>setbalance</em>  Fixer le solde bancaire des membres à un montant <code>rp!economy [setbalance|set] &lt;montant&gt; [membres...]</code></li>
 </ul>
 </li>
-<li><em>lootbox</em>    Lister les lootboxes actuels <code>rp![lootbox|lb]</code>
+<li><em>lootbox</em>    Lister les lootboxes actuelles <code>rp![lootbox|lb]</code>
 <ul>
-<li><em>buy</em>         Acheter un lootbox<code>rp!lootbox buy &lt;nom&gt;</code></li>
+<li><em>buy</em>         Acheter un lootbox <code>rp!lootbox buy &lt;nom&gt;</code></li>
 <li><em>create</em>      Créer un nouveau lootbox.<br>
 Utilisez <code>{chose}x{#}</code> notation pour ajouter les choses avec {#} poids.<br>
 Poids est un entier. Pour exemple avec<br>
-<code>bananex2 orangex3</code>: Le resultat du boîte sera<br>
+<code>bananex2 orangex3</code>: Le resultat de la boîte sera<br>
 un choix au hasard de [banane, banane, orange, orange, orange]<br>
 <code>rp!lootbox [create|new] &lt;nom&gt; &lt;coût&gt; [choses...]</code></li>
-<li><em>delete</em>      Supprimer un lootbox<code>rp!lootbox [delete|remove] &lt;nom&gt;</code></li>
+<li><em>delete</em>      Supprimer une lootbox <code>rp!lootbox [delete|remove] &lt;nom&gt;</code></li>
 </ul>
 </li>
-<li><em>lotto</em>      Lister les loteries actuels. <code>rp![lotto|lottery]</code>
+<li><em>lotto</em>      Lister les loteries actuelles. <code>rp![lotto|lottery]</code>
 <ul>
-<li><em>enter</em>         Entrer la loterie. <code>rp!lotto [enter|join] &lt;nom&gt;</code></li>
-<li><em>new</em>           Créer un nouvelle lotto, avec un cagnotte fixé pendant le temps en secondes<code>rp!lotto [new|create] &lt;nom&gt; &lt;cagnotte&gt; &lt;temps&gt;</code></li>
+<li><em>enter</em>         Rejoindre la loterie. <code>rp!lotto [enter|join] &lt;nom&gt;</code></li>
+<li><em>new</em>           Créer une nouvelle loterie, avec une cagnotte fixé par un temps en secondes <code>rp!lotto [new|create] &lt;nom&gt; &lt;cagnotte&gt; &lt;temps&gt;</code></li>
 </ul>
 </li>
-<li><em>market</em>     Voir le marché des joueurs<code>rp![market|m|pm]</code>
+<li><em>market</em>     Voir le marché des joueurs <code>rp![market|m|pm]</code>
 <ul>
-<li><em>buy</em>           Acheter une chose du marché avec l'ID donné<code>rp!market [buy|purchase] &lt;id&gt;</code></li>
-<li><em>create</em>        Vendre quelque chose sur le marché <code>rp!market [create|createlisting|new|listitem|list] &lt;coût&gt; &lt;montant&gt; &lt;chose&gt;</code></li>
-<li><em>search</em>        Chercher une chose sur le marché <code>rp!market search &lt;chose&gt;</code></li>
+<li><em>buy</em>           Acheter un objet du marché avec l'ID donné <code>rp!market [buy|purchase] &lt;id&gt;</code></li>
+<li><em>create</em>        Vendre quelque chose sur le marché <code>rp!market [create|createlisting|new|listitem|list] &lt;coût&gt; &lt;quantité&gt; &lt;chose&gt;</code></li>
+<li><em>search</em>        Chercher un objet sur le marché <code>rp!market search &lt;objet&gt;</code></li>
 </ul>
 </li>
-<li><em>pay</em>        Payer quelqu'un un montant<code>rp!pay &lt;montant&gt; &lt;membre&gt;</code></li>
-<li><em>shop</em>       Lister toutes les choses sur le magasin du serveur
+<li><em>pay</em>        Payer à quelqu'un un montant <code>rp!pay &lt;montant&gt; &lt;membre&gt;</code></li>
+<li><em>shop</em>       Lister tous les objets sur le magasin du serveur
 <ul>
 <li>
-<p><em>additem</em>       Ajouter une chose à le magasin du serveur, pour fair une chose invendable ou pas achetable fixer leur valeurs respectifs à 0</p>
+<p><em>additem</em>       Ajouter une chose au magasin du serveur, pour rendre un objet invendable ou non-achetable fixer leur valeurs respectives à 0</p>
 <pre><code>
   Henry: rp!shop additem Pokéball
-  RPGBot: Disez 'cancel' pour annuler ou 'skip' pour passer. Combien il devra être achetable pour? 0 pour pas achetable. [Say 'cancel' to cancel or 'skip' to skip a step. How much should this be buyable for? 0 for not buyable]
+  RPGBot: Dites 'cancel' pour annuler ou 'skip' pour skip. A quel prix doit il être achetable? 0 pour pas achetable. [Say 'cancel' to cancel or 'skip' to skip a step. How much should this be buyable for? 0 for not buyable]
   Henry: 0
-  RPGBot: Combien il devra être vendable pour? 0 pour pas vendable
+  RPGBot: Quel sera son prix de vente? 0 pour pas vendable
   Henry: 10
-  RPGBot: Quel est le niveau minimum un utilisateur doit être pour cette chose? 0 pour pas minimum
+  RPGBot: Quel doit être le niveau minimum d'un utilisateur pour l'acheter? 0 pour pas minimum
   Henry: 0
   RPGBot: Magasin actualisé [Guild shop updated]
 </code></pre>
-<p>Peut être vendu pour $10 et ne peut pas être acheté. Utilisateur ne doit pas être un niveau certain. Il faut être une chose qui existe! Cela demande Bot Moderator or Admin <code>rp!shop [additem|add] &lt;nom&gt;</code></p>
+<p>	Peut être vendu pour $10 et ne peut pas être acheté. Utilisateur ne doit pas avoir un niveau minimum. Il faut que sa soit un objet qui existe! Cela demande le grade Bot Moderator ou Admin <code>rp!shop [additem|add] &lt;nom&gt;</code></p>
 </li>
 <li>
-<p><em>buy</em>           Acheter quelque chose du magasin <code>rp!shop buy &lt;chose&gt; &lt;montant&gt;</code></p>
+<p><em>buy</em>           Acheter quelque chose dans le magasin <code>rp!shop buy &lt;chose&gt; &lt;montant&gt;</code></p>
 </li>
 <li>
-<p><em>removeitem</em>    Supprimer quelque chose du magasin. Cela demande Bot Mod or Bot Admin <code>rp!shop removeitem &lt;nom&gt;</code></p>
+<p><em>removeitem</em>    Supprimer quelque chose du magasin. Cela demande le grade Bot Mod or Bot Admin <code>rp!shop removeitem &lt;nom&gt;</code></p>
 </li>
 <li>
 <p><em>sell</em>          Vendre quelque chose au magasin <code>rp!shop sell &lt;chose&gt; &lt;montant&gt;</code></p>
@@ -213,96 +213,96 @@ un choix au hasard de [banane, banane, orange, orange, orange]<br>
   Henry: rp!guild create Team Rocket
   RPGBot: Disez 'cancel' pour annuler ou 'skip' pour passer. Décrivez la guilde ['cancel' or 'skip' to cancel creation or skip a step. Describe the Guild (guild description)]
   Henry: Nous voulons voler Pikachu et nous sommes cool
-  RPGBot: Cette guilde est-elle ouverte à tous? Ou on a besoin d'une invitation (yes [oui] ou no [non]) [Is this guild open to everyone? Or is an invite necessary? (yes or no, no is assumed)]
+  RPGBot: Cette guilde est-elle ouverte à tous? Ou a-t-on besoin d'une invitation (yes [oui] ou no [non]) [Is this guild open to everyone? Or is an invite necessary? (yes or no, no is assumed)]
   Henry: yes [oui]
   RPGBot: Si vous voulez, donnez l'URL d'une image pour la guilde [If you'd like give a URL to an image for the guild]
   Henry: http://cdn.bulbagarden.net/upload/thumb/d/d3/Team_Rocket_anime.png/300px-Team_Rocket_anime.png
-  RPGBot: Finalment vous pouvez aussi fixé une icône pour la guilde [Finally, you can also set an icon for the guild]
+  RPGBot: Finalment vous pouvez aussi fixer une icône pour la guilde [Finally, you can also set an icon for the guild]
   Henry: https://www.seti.soton.ac.uk/static/uploads/socialgroupicon_36_1265776899.gif
-  RPGBot: Guilde créé! [Guild successfully created!]
+  RPGBot: Guilde créée! [Guild successfully created!]
 </code></pre>
 </li>
 <li>
-<p><em>delete</em>         Delete your guild</p>
+<p><em>delete</em>         Supprimer votre guilde</p>
 </li>
 <li>
-<p><em>deposit</em>        Deposit an amount of money into the guild bank <code>rp!guild deposit &lt;amount&gt;</code></p>
+<p><em>deposit</em>        Deposer une somme d'argent dans la banque de votre guilde <code>rp!guild deposit &lt;montant&gt;</code></p>
 </li>
 <li>
-<p><em>deposititems</em>   Deposit items into the guild’s storage, uses {item}x{#} notation (i.e. bananax3) <code>rp!guild deposititems [items...]</code></p>
+<p><em>deposititems</em>   Deposer des objets dans la baque de votre guilde, utilisez {objet}x{#} notation (i.e. bananax3) <code>rp!guild deposititems [items...]</code></p>
 </li>
 <li>
-<p><em>info</em>           Get info on a guild <code>rp!guild info &lt;name&gt;</code></p>
+<p><em>info</em>           Obtenez les informations sur une guilde <code>rp!guild info &lt;name&gt;</code></p>
 </li>
 <li>
-<p><em>invite</em>         Invite a user your closed guild <code>rp!guild invite &lt;user&gt;</code></p>
+<p><em>invite</em>         Invitez un utilisateur dans votre guilde fermée <code>rp!guild invite &lt;user&gt;</code></p>
 </li>
 <li>
-<p><em>join</em>           Join a guild (if you have an invite for closed guilds) <code>rp!guild join &lt;name&gt;</code></p>
+<p><em>join</em>           Rejoindre une guilde (si vous avez unz invitation pour une guilde) <code>rp!guild join &lt;name&gt;</code></p>
 </li>
 <li>
-<p><em>kick</em>           Kick a member from a guild <code>rp!guild kick &lt;user&gt;</code></p>
+<p><em>kick</em>           Virez quelqu'un de votre guilde <code>rp!guild kick &lt;user&gt;</code></p>
 </li>
 <li>
-<p><em>leave</em>          Leave your guild</p>
+<p><em>leave</em>          Quitter votre guilde</p>
 </li>
 <li>
-<p><em>setdescription</em> Set the guild’s description <code>rp!guild [setdescription|setdesc] &lt;description&gt;</code></p>
+<p><em>setdescription</em> Ecrire la description de la guilde <code>rp!guild [setdescription|setdesc] &lt;description&gt;</code></p>
 </li>
 <li>
-<p><em>seticon</em>        Set the guild’s icon <code>rp!guild seticon &lt;url&gt;</code></p>
+<p><em>seticon</em>        Définir l'icône de la guilde <code>rp!guild seticon &lt;url&gt;</code></p>
 </li>
 <li>
-<p><em>setimage</em>       Set the guild’s image <code>rp!guild setimage &lt;url&gt;</code></p>
+<p><em>setimage</em>       Définir l'image de la guilde <code>rp!guild setimage &lt;url&gt;</code></p>
 </li>
 <li>
-<p><em>setmod</em>         Give the listed users mod for your guild (guild owner only) <code>rp!guild setmod [members...]</code></p>
+<p><em>setmod</em>         Donne le rang modérateur aux personnes listées (meneur de la guilde seulement) <code>rp!guild setmod [membres...]</code></p>
 </li>
 <li>
-<p><em>toggleopen</em>     Toggle the Guilds open state</p>
+<p><em>toggleopen</em>     Change l'etat de la guilde a "ouvert" ou "fermé" </p>
 </li>
 <li>
-<p><em>withdraw</em>       Take money from the guild bank <code>rp!guild withdraw &lt;amount&gt;</code></p>
+<p><em>withdraw</em>       Retirer argent de la banque de la guilde <code>rp!guild withdraw &lt;montant&gt;</code></p>
 </li>
 <li>
-<p><em>withdrawitems</em>  Withdraw items from the guild (guild mods only, same syntax as deposit items) <code>rp!guild withdrawitems [items...]</code></p>
+<p><em>withdrawitems</em>  Retirer des objets de la banque de la guilde (modérateurs de la guilde seulement, même syntaxe que pour déposer des items) <code>rp!guild withdrawitems [objets...]</code></p>
 </li>
 </ul>
 </li>
-<li><em>guilds</em>     List guilds</li>
+<li><em>guilds</em>     Liste les guildes</li>
 </ul>
-<h4><a id="Inventory_92"></a>Inventory:</h4>
+<h4><a id="Inventory_92"></a>Inventaire:</h4>
 <ul>
-<li><em>inventory</em>  Check your or another users inventory. <code>rp![inventory|i|inv] [member]</code>
+<li><em>inventory</em>  Regarder votre inventaire ou celui d'un autre. <code>rp![inventory|i|inv] [membre]</code>
 <ul>
-<li><em>give</em>           Give items ({item}x{#}) to a member; ie: ;give @Henry#6174 pokeballx3 <code>rp!inventory give &lt;other&gt; [items...]</code></li>
-<li><em>giveitem</em>       Give an item to a person (Not out of your inventory, must be Bot Moderator) <code>rp!inventory giveitem &lt;item&gt; &lt;num&gt; [members...]</code></li>
-<li><em>takeitem</em>       Remove an item from a person’s inventory (Must be Bot Moderator) <code>rp!inventory [takeitem|take] &lt;item&gt; &lt;num&gt; [members...]</code></li>
+<li><em>give</em>           Donner des objets ({item}x{#}) à un membre; ie: rp!give @Henry#6174 pokeballx3 <code>rp!inventory give &lt;autre&gt; [objets...]</code></li>
+<li><em>giveitem</em>       Donner un objet a un utilisateur (Pas depuis votre inventaire, vous devez être modérateur) <code>rp!inventory giveitem &lt;item&gt; &lt;num&gt; [members...]</code></li>
+<li><em>takeitem</em>       Supprimer un objet de l'inventaire d'une personne (Devez être modérateur) <code>rp!inventory [takeitem|take] &lt;item&gt; &lt;num&gt; [members...]</code></li>
 </ul>
 </li>
 </ul>
-<h4><a id="Misc_97"></a>Misc:</h4>
+<h4><a id="Misc_97"></a>Divers:</h4>
 <ul>
 <li>
-<p><em>donate</em>     Donation information</p>
+<p><em>donate</em>     Informations pour les dons</p>
 </li>
 <li>
-<p><em>feedback</em>   Give me some feedback on the bot <code>rp!feedback &lt;feedback&gt;</code></p>
+<p><em>feedback</em>   Donnez moi des retours sur le bot <code>rp!feedback &lt;feedback&gt;</code></p>
 </li>
 <li>
-<p><em>info</em>       Bot Info</p>
+<p><em>info</em>       Infos sur le bot</p>
 </li>
 <li>
-<p><em>ping</em>       Test the bot’s connection ping</p>
+<p><em>ping</em>       Tester le ping du bot</p>
 </li>
 <li>
-<p><em>rtd</em>        Roll a number of dice with given sides (ndx notation)<br>
-Example: rp!rtd 3d7 2d4<br>
-Optional Additions:<br>
-Test for success by adding a &gt;/&lt;#</p>
-<p>Grab the top n rolls by adding ^n</p>
-<p>Add to the final roll by just adding a number (pos or neg)</p>
-<p>Examples of all:</p>
+<p><em>rtd</em>        Lancer un dé un certain nombre de fois et avec un certain nombre de faces (ndx notation)<br>
+Exemple: rp!rtd 3d7 2d4<br>
+Ajouts Optionnels:<br>
+Vérifier la réussite en mettant un &gt;/&lt;#</p>
+<p>Obtener le meilleur lancer possible en mettant un ^n</p>
+<p>Ajouter des nombres au résultat final (pos ou neg)</p>
+<p>Exemples de tout:</p>
 <pre><code>Henry: rp!rtd 8d8 -12 15 ^4 &gt;32
 RPGBot: Roll failed (30 &gt; 32) ([8 + 7 + 6 + 6] + -12 + 15) (Grabbed top 4 out of 8)
 </code></pre>
@@ -400,4 +400,3 @@ Spamming commands or messages will not earn more exp! <code>rp![experience|exp] 
   <a href="">English</a>
   </body>
 </html>
-
